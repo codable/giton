@@ -1,0 +1,28 @@
+{
+  "name": "gits",
+  "version": "1.0.0",
+  "description": "A simple git server based on jsDAV which can serve multiple git repositories and provide http access.",
+  "main": "index.js",
+  "dependencies": {
+    "shelljs": "^0.5.3",
+    "jsDAV": "^0.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/codable/gits.git"
+  },
+  "keywords": [
+    "git",
+    "jsDAV"
+  ],
+  "author": "FF Xu <ff@bristep.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codable/gits/issues"
+  },
+  "homepage": "https://github.com/codable/gits#readme"
+}
