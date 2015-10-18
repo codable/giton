@@ -43,7 +43,7 @@ function list(repos) {
 }
 
 function ask(rl) {
-  rl.question("gits> ", function(cmd) {
+  rl.question("giton> ", function(cmd) {
     var argv = cmd.split(' ');
     switch (argv[0]) {
       case 'create':

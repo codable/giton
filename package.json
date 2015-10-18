@@ -1,5 +1,5 @@
 {
-  "name": "gits",
+  "name": "giton",
   "version": "1.0.0",
   "description": "A simple git server based on jsDAV which can serve multiple git repositories and provide http access.",
   "main": "index.js",
@@ -22,7 +22,7 @@
   "author": "FF Xu <ff@bristep.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codable/gits/issues"
+    "url": "https://github.com/codable/giton/issues"
   },
-  "homepage": "https://github.com/codable/gits#readme"
+  "homepage": "https://github.com/codable/giton#readme"
 }
