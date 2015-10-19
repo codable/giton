@@ -1,6 +1,6 @@
 {
   "name": "giton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple git server based on jsDAV which can serve multiple git repositories and provide http access.",
   "main": "index.js",
   "dependencies": {
