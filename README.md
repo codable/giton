@@ -9,11 +9,10 @@ USAGE
 
 ### Create instance
 
-    mkdir git-server
-    cd git-server
+    npm install -g giton
     mkdir repos
-    git clone https://github.com/codable/giton.git
-    node giton
+    cd repos
+    giton
 
 now you can create repo inside the shell and access all your repos at http://127.0.0.1:5911/
 

@@ -1,12 +1,14 @@
 #!/usr/bin/env node
-
 'use strict';
 
-require('shelljs/global');
-var readline = require('readline');
+var readline = require('readline'),
+  bunyan = require('bunyan');
 
+require('shelljs/global');
+
+var logger = bunyan.createLogger({name: 'giton'});
 var PORT = 5911;
-var REPOS = '.';
+var REPOS = process.cwd();
 
 function serve(repos, port)
 {
@@ -15,8 +17,9 @@ function serve(repos, port)
   var jsDAV_Locks_Backend_FS = require('jsdav/lib/DAV/plugins/locks/fs');
   jsDAV.createServer({
     node: repos,
-    locksBackend: jsDAV_Locks_Backend_FS.new(repos)
+    locksBackend: jsDAV_Locks_Backend_FS.new('/tmp/')
   }, port, '0.0.0.0');
+  logger.info('Repositories should be at %s', repos);
 }
 
 
