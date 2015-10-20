@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 'use strict';
 
-var readline = require('readline'),
+var minimist = require('minimist'),
+ readline = require('readline'),
   bunyan = require('bunyan');
 
 require('shelljs/global');
 
+var kwargs = minimist(process.argv.slice(2));
 var logger = bunyan.createLogger({name: 'giton'});
-var PORT = 5911;
-var REPOS = process.cwd();
+
+var PORT = kwargs['p'] || 5911;
+var REPOS = kwargs['b'] || process.cwd();
 
 function serve(repos, port)
 {
@@ -80,6 +83,7 @@ function shell() {
 function main() {
   var repos = REPOS;
   var port = PORT;
+  mkdir('-p', repos);
   serve(repos, port);
   setTimeout(shell, 500);
 }
