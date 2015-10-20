@@ -21,7 +21,7 @@ now you can create repo inside the shell and access all your repos at http://127
 
     giton> create test
 
-the new repo can be accessed at http://127.0.0.1/test.git
+the new repo can be accessed at http://127.0.0.1:5911/test.git, both pull and push are supported.
 
 ### Remove repo
 
