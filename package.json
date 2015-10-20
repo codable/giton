@@ -9,7 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node index.js"
+    "start": "node ./bin/giton",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/codable/giton/issues"
+  },
+  "bin": {
+    "giton": "./bin/giton"
   },
   "homepage": "https://github.com/codable/giton#readme"
 }

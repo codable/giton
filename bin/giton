@@ -1,10 +1,12 @@
+#!/usr/bin/env node
+
 'use strict';
 
 require('shelljs/global');
 var readline = require('readline');
 
 var PORT = 5911;
-var REPOS = './repos';
+var REPOS = '.';
 
 function serve(repos, port)
 {
