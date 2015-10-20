@@ -31,7 +31,7 @@ function create(repos, name) {
   exec('git update-server-info');
   popd();
   popd();
-  exec('ln -s ' + __dirname + '/scripts/update ' + repos + '/' + name + '/hooks/update');
+  exec('ln -s ' + __dirname + '/../scripts/update ' + repos + '/' + name + '/hooks/update');
 }
 
 function remove(repos, name) {
