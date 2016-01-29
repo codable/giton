@@ -15,9 +15,9 @@ var REPOS = kwargs['b'] || process.cwd();
 
 function serve(repos, port)
 {
-  var jsDAV = require('jsdav');
+  var jsDAV = require('jsDAV');
   jsDAV.debugMode = false;
-  var jsDAV_Locks_Backend_FS = require('jsdav/lib/DAV/plugins/locks/fs');
+  var jsDAV_Locks_Backend_FS = require('jsDAV/lib/DAV/plugins/locks/fs');
   jsDAV.createServer({
     node: repos,
     locksBackend: jsDAV_Locks_Backend_FS.new('/tmp/')
